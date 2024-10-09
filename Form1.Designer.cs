@@ -37,18 +37,18 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
+            this.tempIn = new System.Windows.Forms.TextBox();
+            this.bmikgin = new System.Windows.Forms.TextBox();
+            this.bmimin = new System.Windows.Forms.TextBox();
+            this.triangleBottomIn = new System.Windows.Forms.TextBox();
+            this.triangleHeghtIn = new System.Windows.Forms.TextBox();
+            this.tempBtn = new System.Windows.Forms.Button();
+            this.bmiBtn = new System.Windows.Forms.Button();
+            this.triangleBtn = new System.Windows.Forms.Button();
+            this.fTemp = new System.Windows.Forms.Label();
+            this.bmi = new System.Windows.Forms.Label();
+            this.triangleArea = new System.Windows.Forms.Label();
+            this.triangleEdge = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -141,133 +141,136 @@
             this.label9.TabIndex = 8;
             this.label9.Text = "斜邊長:";
             // 
-            // textBox1
+            // tempIn
             // 
-            this.textBox1.Font = new System.Drawing.Font("新細明體", 16F);
-            this.textBox1.Location = new System.Drawing.Point(140, 30);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 33);
-            this.textBox1.TabIndex = 9;
+            this.tempIn.Font = new System.Drawing.Font("新細明體", 16F);
+            this.tempIn.Location = new System.Drawing.Point(140, 30);
+            this.tempIn.Name = "tempIn";
+            this.tempIn.Size = new System.Drawing.Size(100, 33);
+            this.tempIn.TabIndex = 9;
             // 
-            // textBox2
+            // bmikgin
             // 
-            this.textBox2.Font = new System.Drawing.Font("新細明體", 16F);
-            this.textBox2.Location = new System.Drawing.Point(243, 99);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 33);
-            this.textBox2.TabIndex = 10;
+            this.bmikgin.Font = new System.Drawing.Font("新細明體", 16F);
+            this.bmikgin.Location = new System.Drawing.Point(243, 99);
+            this.bmikgin.Name = "bmikgin";
+            this.bmikgin.Size = new System.Drawing.Size(100, 33);
+            this.bmikgin.TabIndex = 10;
             // 
-            // textBox3
+            // bmimin
             // 
-            this.textBox3.Font = new System.Drawing.Font("新細明體", 16F);
-            this.textBox3.Location = new System.Drawing.Point(473, 99);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 33);
-            this.textBox3.TabIndex = 11;
+            this.bmimin.Font = new System.Drawing.Font("新細明體", 16F);
+            this.bmimin.Location = new System.Drawing.Point(473, 99);
+            this.bmimin.Name = "bmimin";
+            this.bmimin.Size = new System.Drawing.Size(100, 33);
+            this.bmimin.TabIndex = 11;
             // 
-            // textBox4
+            // triangleBottomIn
             // 
-            this.textBox4.Font = new System.Drawing.Font("新細明體", 16F);
-            this.textBox4.Location = new System.Drawing.Point(146, 210);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 33);
-            this.textBox4.TabIndex = 12;
+            this.triangleBottomIn.Font = new System.Drawing.Font("新細明體", 16F);
+            this.triangleBottomIn.Location = new System.Drawing.Point(146, 210);
+            this.triangleBottomIn.Name = "triangleBottomIn";
+            this.triangleBottomIn.Size = new System.Drawing.Size(100, 33);
+            this.triangleBottomIn.TabIndex = 12;
             // 
-            // textBox5
+            // triangleHeghtIn
             // 
-            this.textBox5.Font = new System.Drawing.Font("新細明體", 16F);
-            this.textBox5.Location = new System.Drawing.Point(348, 210);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 33);
-            this.textBox5.TabIndex = 13;
+            this.triangleHeghtIn.Font = new System.Drawing.Font("新細明體", 16F);
+            this.triangleHeghtIn.Location = new System.Drawing.Point(348, 210);
+            this.triangleHeghtIn.Name = "triangleHeghtIn";
+            this.triangleHeghtIn.Size = new System.Drawing.Size(100, 33);
+            this.triangleHeghtIn.TabIndex = 13;
             // 
-            // button1
+            // tempBtn
             // 
-            this.button1.Font = new System.Drawing.Font("新細明體", 16F);
-            this.button1.Location = new System.Drawing.Point(266, 25);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(44, 41);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "=";
-            this.button1.UseVisualStyleBackColor = true;
+            this.tempBtn.Font = new System.Drawing.Font("新細明體", 16F);
+            this.tempBtn.Location = new System.Drawing.Point(266, 25);
+            this.tempBtn.Name = "tempBtn";
+            this.tempBtn.Size = new System.Drawing.Size(44, 41);
+            this.tempBtn.TabIndex = 14;
+            this.tempBtn.Text = "=";
+            this.tempBtn.UseVisualStyleBackColor = true;
+            this.tempBtn.Click += new System.EventHandler(this.tempBtn_Click);
             // 
-            // button2
+            // bmiBtn
             // 
-            this.button2.Font = new System.Drawing.Font("新細明體", 16F);
-            this.button2.Location = new System.Drawing.Point(588, 92);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(44, 41);
-            this.button2.TabIndex = 15;
-            this.button2.Text = "=";
-            this.button2.UseVisualStyleBackColor = true;
+            this.bmiBtn.Font = new System.Drawing.Font("新細明體", 16F);
+            this.bmiBtn.Location = new System.Drawing.Point(588, 92);
+            this.bmiBtn.Name = "bmiBtn";
+            this.bmiBtn.Size = new System.Drawing.Size(44, 41);
+            this.bmiBtn.TabIndex = 15;
+            this.bmiBtn.Text = "=";
+            this.bmiBtn.UseVisualStyleBackColor = true;
+            this.bmiBtn.Click += new System.EventHandler(this.bmiBtn_Click);
             // 
-            // button3
+            // triangleBtn
             // 
-            this.button3.Font = new System.Drawing.Font("新細明體", 16F);
-            this.button3.Location = new System.Drawing.Point(473, 203);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(44, 41);
-            this.button3.TabIndex = 16;
-            this.button3.Text = "=";
-            this.button3.UseVisualStyleBackColor = true;
+            this.triangleBtn.Font = new System.Drawing.Font("新細明體", 16F);
+            this.triangleBtn.Location = new System.Drawing.Point(473, 203);
+            this.triangleBtn.Name = "triangleBtn";
+            this.triangleBtn.Size = new System.Drawing.Size(44, 41);
+            this.triangleBtn.TabIndex = 16;
+            this.triangleBtn.Text = "=";
+            this.triangleBtn.UseVisualStyleBackColor = true;
+            this.triangleBtn.Click += new System.EventHandler(this.triangleBtn_Click);
             // 
-            // label10
+            // fTemp
             // 
-            this.label10.AutoSize = true;
-            this.label10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label10.Font = new System.Drawing.Font("新細明體", 16F);
-            this.label10.Location = new System.Drawing.Point(434, 35);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(2, 24);
-            this.label10.TabIndex = 17;
+            this.fTemp.AutoSize = true;
+            this.fTemp.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.fTemp.Font = new System.Drawing.Font("新細明體", 16F);
+            this.fTemp.Location = new System.Drawing.Point(434, 35);
+            this.fTemp.Name = "fTemp";
+            this.fTemp.Size = new System.Drawing.Size(2, 24);
+            this.fTemp.TabIndex = 17;
             // 
-            // label11
+            // bmi
             // 
-            this.label11.AutoSize = true;
-            this.label11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label11.Font = new System.Drawing.Font("新細明體", 16F);
-            this.label11.Location = new System.Drawing.Point(647, 100);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(2, 24);
-            this.label11.TabIndex = 18;
+            this.bmi.AutoSize = true;
+            this.bmi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.bmi.Font = new System.Drawing.Font("新細明體", 16F);
+            this.bmi.Location = new System.Drawing.Point(647, 100);
+            this.bmi.Name = "bmi";
+            this.bmi.Size = new System.Drawing.Size(2, 24);
+            this.bmi.TabIndex = 18;
             // 
-            // label12
+            // triangleArea
             // 
-            this.label12.AutoSize = true;
-            this.label12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label12.Font = new System.Drawing.Font("新細明體", 16F);
-            this.label12.Location = new System.Drawing.Point(198, 278);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(2, 24);
-            this.label12.TabIndex = 19;
+            this.triangleArea.AutoSize = true;
+            this.triangleArea.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.triangleArea.Font = new System.Drawing.Font("新細明體", 16F);
+            this.triangleArea.Location = new System.Drawing.Point(198, 278);
+            this.triangleArea.Name = "triangleArea";
+            this.triangleArea.Size = new System.Drawing.Size(2, 24);
+            this.triangleArea.TabIndex = 19;
             // 
-            // label13
+            // triangleEdge
             // 
-            this.label13.AutoSize = true;
-            this.label13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label13.Font = new System.Drawing.Font("新細明體", 16F);
-            this.label13.Location = new System.Drawing.Point(198, 345);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(2, 24);
-            this.label13.TabIndex = 20;
+            this.triangleEdge.AutoSize = true;
+            this.triangleEdge.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.triangleEdge.Font = new System.Drawing.Font("新細明體", 16F);
+            this.triangleEdge.Location = new System.Drawing.Point(198, 345);
+            this.triangleEdge.Name = "triangleEdge";
+            this.triangleEdge.Size = new System.Drawing.Size(2, 24);
+            this.triangleEdge.TabIndex = 20;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.triangleEdge);
+            this.Controls.Add(this.triangleArea);
+            this.Controls.Add(this.bmi);
+            this.Controls.Add(this.fTemp);
+            this.Controls.Add(this.triangleBtn);
+            this.Controls.Add(this.bmiBtn);
+            this.Controls.Add(this.tempBtn);
+            this.Controls.Add(this.triangleHeghtIn);
+            this.Controls.Add(this.triangleBottomIn);
+            this.Controls.Add(this.bmimin);
+            this.Controls.Add(this.bmikgin);
+            this.Controls.Add(this.tempIn);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -295,18 +298,18 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox tempIn;
+        private System.Windows.Forms.TextBox bmikgin;
+        private System.Windows.Forms.TextBox bmimin;
+        private System.Windows.Forms.TextBox triangleBottomIn;
+        private System.Windows.Forms.TextBox triangleHeghtIn;
+        private System.Windows.Forms.Button tempBtn;
+        private System.Windows.Forms.Button bmiBtn;
+        private System.Windows.Forms.Button triangleBtn;
+        private System.Windows.Forms.Label fTemp;
+        private System.Windows.Forms.Label bmi;
+        private System.Windows.Forms.Label triangleArea;
+        private System.Windows.Forms.Label triangleEdge;
     }
 }
 
