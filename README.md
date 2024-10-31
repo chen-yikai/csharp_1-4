@@ -1,2 +1,2 @@
 # 1-4
-![image](https://github.com/user-attachments/assets/a862efc3-fdec-4ca0-886f-7ab64d572854)
+![image](https://github.com/user-attachments/assets/76405819-e3f0-45f1-9069-e13a1cbbc373)
